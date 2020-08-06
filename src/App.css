@@ -1,13 +1,14 @@
 .App {
   text-align: center;
-}
-
-body {
-  font-family: 'Lora', serif;
+  
   background-color: pink;
-  background: url('./assets/UA5_BG.png'); 
-
+  /* background: url('./assets/UA5_BG.png');  */
 }
+
+.sectionTitle {
+  font-family: 'Lora', serif;
+}
+
 
 .App-logo {
   height: 40vmin;
