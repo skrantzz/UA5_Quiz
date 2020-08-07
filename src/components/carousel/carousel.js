@@ -1,10 +1,30 @@
-import React, { Component } from "react";
-import "./carousel.css"
+import React, { Component, Fragment } from "react";
+import cn from "classnames";
+import "./carousel.css";
 
 import Slider from "react-slick";
 
-export default function Carousel1(props) {
-  var settings = {
+function CarouselTitle({ children }) {
+  return (
+    <div className="sectionTitle">
+      {children}
+    </div>
+  )
+}
+
+function QuoteText({ children }) {
+  return (
+    <>
+      {children}
+      <br />
+      <hr />
+    </>
+  );
+}
+
+export default function Carousel(props) {
+  const { quotes, title, className = "" } = props;
+  const settings = {
     dots: true,
     infinite: true,
     fade: true,
@@ -12,16 +32,28 @@ export default function Carousel1(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
     className: "slides",
+    fontColor: "blue",
   };
 
+
   return (
-    <div className="carousel">
+    <div className={cn("carousel", className)}>
+      <CarouselTitle>
+        {title}
+      </CarouselTitle>
       <Slider {...settings}>
-        <div>{props.message.section_title.toUpperCase()}</div>
-        <div quote={props.message.quotes.message}>
-          {console.log(props.message.quotes[0].message)}
-        </div>
+        {quotes.map((value, index) => {
+          return (
+            <div key={index}>
+              <QuoteText>{value.message}</QuoteText>
+              {value.attribution}
+            </div>
+            
+          )
+          
+        })}
       </Slider>
+      <button className="button">VIEW ALL</button>
     </div>
   );
 }

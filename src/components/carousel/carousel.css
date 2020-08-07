@@ -1,13 +1,46 @@
 .carousel {
-    margin-bottom: 40vh;
-    margin-top: 10vh;
-    
+  margin-bottom: 20vh;
+  margin-top: 8vh;
+}
+
+.carousel-0 {
+  color: black;
+  font-family: "Lora", serif;
+}
+
+.carousel-1 {
+  color: blue;
+}
+
+.carousel-1 .button {
+  display: none;
+}
+
+.button {
+  font-family: "Lora", serif;
+  font-size: 12px !important;
+  background-color: black !important;
+  color: white;
+  border: none;
+  padding: 6px 20px;
+  margin-top: 10%;
+  border-radius: 0 !important;
+  box-shadow: 0 !important;
 }
 
 .quote {
-font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .attribution {
-font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
+}
+
+hr {
+  position: relative;
+  top: 20px;
+  height: 1px;
+  background: black;
+  margin-bottom: 50px;
+  width: 5%;
 }

@@ -1,37 +1,28 @@
 import React, { Component } from "react";
 import "./App.css";
-// import { Carousel } from 'react-responsive-carousel';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-// import Carousel from './components/carousel/carousel';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import carouselData from "./utils/data.json";
 import "./assets/UA5_BG.png";
-import Carousel1 from "./components/carousel/carousel.js";
+import Carousel from "./components/carousel/carousel.js";
 
 function App() {
   return (
     <div className="App" style={{ padding: 24 }}>
-      {carouselData.map((message) => {
-        // map inside map for quotes
+      {carouselData.map((carousel, index) => {
         return (
-          <div>
-          <div className="sectionTitle">
-            <Carousel1  message={message}/>
-          </div>
-          <div className="quote">
-
-            </div>
-            <div className="attribution">
-
-            </div>
-
-            <Button variant="dark">Dark</Button>{' '}
-            </div>
+          <Carousel
+            key={index}
+            className={`carousel-${index}`}
+            title={carousel.section_title.toUpperCase()}
+            quotes={carousel.quotes}
+          />
         );
       })}
-      </div>
+    </div>
   );
 }
 
