@@ -1,119 +1,40 @@
-
-.App {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  font-weight: 500;
- 
-
-}
-
 body {
-  background: url('./assets/UA5_BG.png'); 
+  background: url("./assets/UA5_BG.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  
+}
+
+.App {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.carousel-0 {
+  color: black;
+}
+
+.carousel-1 .button {
+  display: none;
+}
+
+.carousel-1 .quote-text {
+  color: blue;
 }
 
 .sectionTitle {
-  font-family: 'Lora', serif;
-  -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: black;
-  
+  font-family: "Lora", serif;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+  position: relative;
+  top: 10px;
+  height: 1px;
+  background: black;
+  width: 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-/* .App-header {
-  background-image: url(./assets/UA5_BG.png);
-  background-position: 'center';
-  background-size: 'cover';
-  background-repeat: 'no-repeat';
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  
-} */
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.slides .slick-prev,
-.slides .slick-next {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  
-}
-
-.slides .slick-prev,
-.slides .slick-next {
-  position: absolute;
-  top: 50%;
-  z-index:1;
-  
-}
-
-.slides .slick-prev {
-  left: 5%;
-}
-
-.slides .slick-next {
-  right: 5%;
-}
-
-
-.slick-prev:before{
-  /* background-color: blue !important; */
-  width: 46px;
-  height: 46px;
-  content: '' !important;
-  position: absolute;
-  left: -31px;
-  background-image: url('./assets/left_arrow.png');
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  background-size: 46px;
-  /* opacity: 1 !important; */
-  margin-left: -30px;
-  }
-
-.slick-next:before{
-  /* background-color: blue !important; */
-  width: 46px;
-  height: 46px;
-  content: '' !important;
-  position: absolute;
-  background-image: url('./assets/right_arrow.png');
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  background-size: 46px;
-  /* opacity: 1 !important; */
-  margin-left: 30px;
-  }

@@ -1,27 +1,12 @@
 .carousel {
-  margin-bottom: 20vh;
-  margin-top: 2vh;
-  padding: 0 100px 0;
-  /* background-color: yellow; */
-}
-
-.carousel-0 {
-  color: black;
-}
-
-.carousel-1 {
-  color: blue;
-  margin-bottom: 10vh;
-}
-
-.carousel-1 .button {
-  display: none;
+  width: 100%;
+  padding: 80px 100px;
 }
 
 .button {
   font-family: "Lora", serif;
-  font-size: 12px !important;
-  background-color: black !important;
+  font-size: 12px;
+  background-color: black;
   color: white;
   border: none;
   padding: 6px 20px;
@@ -39,15 +24,10 @@
 }
 
 .sectionTitle {
-    font-family: "Lora", serif;
-    font-size: 1.5vh;
+  font-family: "Lora", serif;
+  font-size: 1.5vh;
 }
 
-hr {
-  position: relative;
-  top: 20px;
-  height: 1px;
-  background: black;
-  margin-bottom: 50px;
-  width: 5%;
+.arrow-component {
+  width: 40px;
 }

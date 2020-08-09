@@ -1,8 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import carouselData from "./utils/data.json";
@@ -12,7 +10,6 @@ import Carousel from "./components/carousel/carousel.js";
 function App() {
   return (
     <div className="App">
-      
       {carouselData.map((carousel, index) => {
         return (
           <Carousel
