@@ -1,16 +1,19 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import cn from "classnames";
 import "./carousel.css";
 
 import Slider from "react-slick";
 
 function CarouselTitle({ children }) {
+  
   return (
-    <div className="sectionTitle">
+    <div className="sectionTitle" style={{color: "black"}}>
       {children}
     </div>
   )
 }
+
+
 
 function QuoteText({ children }) {
   return (
@@ -32,7 +35,7 @@ export default function Carousel(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
     className: "slides",
-    fontColor: "blue",
+    
   };
 
 
@@ -41,7 +44,8 @@ export default function Carousel(props) {
       <CarouselTitle>
         {title}
       </CarouselTitle>
-      <Slider {...settings}>
+      <br/>
+      <Slider {...settings} className="slick-arrow">
         {quotes.map((value, index) => {
           return (
             <div key={index}>

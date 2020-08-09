@@ -1,11 +1,12 @@
 .carousel {
   margin-bottom: 20vh;
-  margin-top: 8vh;
+  margin-top: 2vh;
+  padding: 0 100px 0;
+  /* background-color: yellow; */
 }
 
 .carousel-0 {
   color: black;
-  font-family: "Lora", serif;
 }
 
 .carousel-1 {
@@ -34,6 +35,11 @@
 
 .attribution {
   font-family: "Times New Roman", Times, serif;
+}
+
+.sectionTitle {
+    font-family: "Lora", serif;
+    font-size: 1.5vh;
 }
 
 hr {
