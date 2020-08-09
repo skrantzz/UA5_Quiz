@@ -11,7 +11,8 @@ import Carousel from "./components/carousel/carousel.js";
 
 function App() {
   return (
-    <div className="App" style={{ padding: 24 }}>
+    <div className="App">
+      
       {carouselData.map((carousel, index) => {
         return (
           <Carousel

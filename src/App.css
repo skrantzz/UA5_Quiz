@@ -2,13 +2,19 @@
 .App {
   text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size:35px;
+  font-size: 30px;
   font-weight: 500;
-  background-color: pink;
+ 
+
+}
+
+body {
+  background: url('./assets/UA5_BG.png'); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   
-  
-  
-  /* background: url('./assets/UA5_BG.png');  */
 }
 
 .sectionTitle {
