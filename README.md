@@ -5,7 +5,10 @@
 
   <img src="src/assets/screen_shot.jpg" alt="screenshot"  width="900" height="550px"/>
   
-
+## To run:
+```
+npm run start
+```
 
 ## Built with
 
